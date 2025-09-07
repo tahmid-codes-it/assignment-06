@@ -250,16 +250,16 @@
                         <img src="assets/about.png" alt="">
                     </div>
                     <div class="flex-1 p-4">
-                        <p class="text-align: justify">Green Earth is a global tree plantation initiative dedicated to
+                        <p class="text-justify">Green Earth is a global tree plantation initiative dedicated to
                             fighting climate change. Since
                             our start, we’ve planted over 500,000 trees worldwide. By joining our campaign, you help
                             restore
                             forests, create habitats for wildlife, and combat global warming.
                         </p>
 
-                        <ul class="list-disc ml-6">
+                        <ul class="list-disc ml-6 mt-5">
                             <li>Restoration of natural habitats</li>
-                            <li>Restoration of natural habitats</li>
+                            <li>Improvement of air quality</li>
                             <li>Support for local communities</li>
                         </ul>
                     </div>
@@ -273,29 +273,80 @@
         <h1 class="text-3xl text-center mb-10 font-semibold">Our Impact</h1>
 
         <div class="flex flex-col md:flex-row justify-center items-center gap-10 md:gap-20">
-            <div class="card w-96 bg-base-100 card-md shadow-sm">
+            <div class="card w-80 md:w-96 bg-base-100 card-md shadow-sm">
                 <div class="card-body">
                     <h2 class="text-center font-semibold text-3xl text-[#15803D]">500K+</h2>
                     <p class="text-center">Trees Planted</p>
                 </div>
             </div>
-            <div class="card w-96 bg-base-100 card-md shadow-sm">
+            <div class="card w-80 md:w-96 bg-base-100 card-md shadow-sm">
                 <div class="card-body">
                     <h2 class="text-center font-semibold text-3xl text-[#15803D]">120+</h2>
                     <p class="text-center">Communities Involved</p>
                 </div>
             </div>
-            <div class="card w-96 bg-base-100 card-md shadow-sm">
+            <div class="card w-80 md:w-96 bg-base-100 card-md shadow-sm">
                 <div class="card-body">
                     <h2 class="text-center font-semibold text-3xl text-[#15803D]">30+</h2>
                     <p class="text-center">Countries Reached</p>
                 </div>
             </div>
-
-
         </div>
     </section>
 
+
+    <!-- form section starts here -->
+    <section class="bg-[#166534] py-28">
+        <h1 class="text-3xl text-center mb-10 font-semibold text-white">Plant a Tree Today</h1>
+
+        <div class="flex flex-col mx-auto gap-4 w-[300px] md:w-[500px] bg-[#15803D] p-10 rounded-xl">
+            <label class="input validator w-full">
+                <svg class="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <g stroke-linejoin="round" stroke-linecap="round" stroke-width="2.5" fill="none"
+                        stroke="currentColor">
+                        <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                    </g>
+                </svg>
+                <input type="text" required placeholder="Your Name" pattern="[A-Za-z][A-Za-z0-9\-]*" minlength="3"
+                    maxlength="30" title="Only letters, numbers or dash" />
+            </label>
+
+
+
+            <label class="input validator w-full">
+                <svg class="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <g stroke-linejoin="round" stroke-linecap="round" stroke-width="2.5" fill="none"
+                        stroke="currentColor">
+                        <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                        <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                    </g>
+                </svg>
+                <input type="email" placeholder="Your Email Address" required />
+            </label>
+            <div class="validator-hint hidden">Enter valid email address</div>
+
+
+            <select class="select w-full">
+                <option disabled selected>Number of Trees</option>
+                <option>Crimson</option>
+                <option>Amber</option>
+                <option>Velvet</option>
+            </select>
+
+
+            <button class="text-[#15803D] bg-[#FACC15] border-none btn btn-active btn-warning rounded-full">
+                Donate Now
+            </button>
+        </div>
+    </section>
+
+
+
+    <!-- footer section starts here -->
+<section class="bg-[#14532D] py-6">
+<p class="text-center text-white">© 2025 Green Earth. All Rights Reserved.</p>
+</section>
     <script src="script.js"></script>
 </body>
 
