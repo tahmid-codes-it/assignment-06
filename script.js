@@ -142,7 +142,7 @@ const displayPlants = (plants) => {
     for (let plant of plants) {
         const cardDiv = document.createElement("div");
         cardDiv.innerHTML = `
-        <div class="card h-auto sm:h-[420px] md:h-[460px] bg-base-100  shadow-sm">
+        <div class="card h-auto sm:h-[420px] md:h-[460px] bg-base-100 pt-1 md:pt-3 lg:pt-3 shadow-sm">
                         <figure class="px-5 pt-5">
                             <img class="w-full h-52 object-cover rounded-md"src=${plant.image}
                                 alt="${plant.category}" class="rounded-xl" />
