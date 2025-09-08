@@ -7,13 +7,13 @@ const loadCategories = () => {
 const loadTree = (id, btn) => {
     const url = `https://openapi.programming-hero.com/api/category/${id}`;
 
-    // remove active class from all buttons
+    
     const allButtons = document.querySelectorAll("#category-container button");
     allButtons.forEach(button => {
         button.classList.remove("bg-[#136b33]", "text-white");
     });
 
-    // add active class to the clicked button
+    
     btn.classList.add("bg-[#136b33]", "text-white");
 
     fetch(url)
